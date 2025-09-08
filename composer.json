@@ -21,39 +21,26 @@
         },
         {
             "name": "Contributors",
-            "homepage": "https://github.com/friendsofouro/geteventstore-php/graphs/contributors"
+            "homepage": "https://github.com/friendsofouro/kurrentdb-php/graphs/contributors"
         }
     ],
     "require": {
         "php": "^8.3",
         "friendsofouro/kurrentdb-core": ">=0.13.0",
         "guzzlehttp/guzzle": "^7.10",
-        "kevinrob/guzzle-cache-middleware": "^0.7.1",
+        "kevinrob/guzzle-cache-middleware": "^6.0",
         "symfony/cache": "^7.3"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "^2.48",
-        "friendsofphp/php-cs-fixer": "^2.2",
-        "phpunit/phpunit": "^12.3"
+        "ergebnis/composer-normalize": "^2.48"
     },
     "replace": {
         "friendsofouro/geteventstore": "self.version"
-    },
-    "autoload": {
-        "psr-0": {
-            "EventStore": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-0": {
-            "EventStore": "tests/"
-        }
     },
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true
         },
-        "bin-dir": "bin",
         "sort-packages": true
     }
 }
