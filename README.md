@@ -1,14 +1,9 @@
-GetEventStore PHP client
-=====================
+KurrentDB PHP client
+====================
 
-PHP client for [EventStore 3.x HTTP API](http://docs.geteventstore.com/http-api/latest)
+PHP client for [KurrentDB HTTP API](https://docs.kurrent.io/server/v25.0/http-api/introduction.html)
 
-This is the metapackage, to see the actual code https://github.com/FriendsOfOuro/geteventstore-php-core
-
-[![Latest Stable Version](https://poser.pugx.org/friendsofouro/geteventstore/v/stable.svg)](https://packagist.org/packages/friendsofouro/geteventstore) [![Total Downloads](https://poser.pugx.org/friendsofouro/geteventstore/downloads.svg)](https://packagist.org/packages/friendsofouro/geteventstore) [![Latest Unstable Version](https://poser.pugx.org/friendsofouro/geteventstore/v/unstable.svg)](https://packagist.org/packages/friendsofouro/geteventstore) [![License](https://poser.pugx.org/friendsofouro/geteventstore/license.svg)](https://packagist.org/packages/friendsofouro/geteventstore)
-
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/FriendsOfOuro/geteventstore-php.svg)](http://isitmaintained.com/project/FriendsOfOuro/geteventstore-php "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/FriendsOfOuro/geteventstore-php.svg)](http://isitmaintained.com/project/FriendsOfOuro/geteventstore-php "Percentage of issues still open")
+This is the metapackage, to see the actual code https://github.com/FriendsOfOuro/kurrentdb-php-core
 
 Roadmap
 -------
@@ -44,11 +39,8 @@ License
 EventStore PHP Client is released under the MIT License. See the bundled
 [LICENSE](/LICENSE) file for details.
 
-See also
---------
-If you are looking for the TCP implementation you may be interested in [madkom/event-store-client](https://github.com/madkom/event-store-client)
 
 Disclaimer
 ----------
 
-This project is not endorsed by Event Store LLP.
+This project is not endorsed by Event Store LLP nor Kurrent Inc.
