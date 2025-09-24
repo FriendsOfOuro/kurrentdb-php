@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5838ce82c97c452ad8ec99171118c88",
+    "content-hash": "f51e8a1dff7b35f71bd27c31470ef4d3",
     "packages": [
         {
             "name": "brick/math",
@@ -67,24 +67,113 @@
             "time": "2025-08-29T12:40:03+00:00"
         },
         {
-            "name": "friendsofouro/kurrentdb-core",
-            "version": "v0.13.0",
+            "name": "friendsofouro/http-batch-contract",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FriendsOfOuro/kurrentdb-php-core.git",
-                "reference": "30e9f9807122a78c0d62a2723f074ab2322ae196"
+                "url": "https://github.com/FriendsOfOuro/http-batch-contract.git",
+                "reference": "831832c21165fa88244c19485bff037cb971e8ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfOuro/kurrentdb-php-core/zipball/30e9f9807122a78c0d62a2723f074ab2322ae196",
-                "reference": "30e9f9807122a78c0d62a2723f074ab2322ae196",
+                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-contract/zipball/831832c21165fa88244c19485bff037cb971e8ca",
+                "reference": "831832c21165fa88244c19485bff037cb971e8ca",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/psr7": "^2.8",
-                "marc-mabe/php-enum": "^4.7",
-                "php": "^8.3",
-                "php-http/httplug": "^2.4",
+                "php": "^8.4",
+                "psr/http-client": "^1.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.48",
+                "friendsofphp/php-cs-fixer": "^3.88"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FriendsOfOuro\\Http\\Batch\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Contract for a batch of HTTP Requests",
+            "support": {
+                "issues": "https://github.com/FriendsOfOuro/http-batch-contract/issues",
+                "source": "https://github.com/FriendsOfOuro/http-batch-contract/tree/v1.0.0"
+            },
+            "time": "2025-09-24T22:16:17+00:00"
+        },
+        {
+            "name": "friendsofouro/http-batch-guzzle",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfOuro/http-batch-guzzle.git",
+                "reference": "6a9e1cfffdc976494556fb30d8e2c0ff8b185c7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-guzzle/zipball/6a9e1cfffdc976494556fb30d8e2c0ff8b185c7a",
+                "reference": "6a9e1cfffdc976494556fb30d8e2c0ff8b185c7a",
+                "shasum": ""
+            },
+            "require": {
+                "friendsofouro/http-batch-contract": "^1.0",
+                "guzzlehttp/guzzle": "^7.10",
+                "kevinrob/guzzle-cache-middleware": "^7.0",
+                "php": "^8.4",
+                "symfony/cache": "^7.3"
+            },
+            "provide": {
+                "friendsofouro/http-batch-implementation": "^1.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.48",
+                "friendsofphp/php-cs-fixer": "^3.88",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^12.3",
+                "rector/rector": "^2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FriendsOfOuro\\Http\\Batch\\Guzzle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Guzzle implementation for a batch of HTTP Requests",
+            "support": {
+                "issues": "https://github.com/FriendsOfOuro/http-batch-guzzle/issues",
+                "source": "https://github.com/FriendsOfOuro/http-batch-guzzle/tree/v1.0.0"
+            },
+            "time": "2025-09-24T23:10:47+00:00"
+        },
+        {
+            "name": "friendsofouro/kurrentdb-core",
+            "version": "v0.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfOuro/kurrentdb-php-core.git",
+                "reference": "ac5d0f9180a99444eb1a91391446e774f74cb36f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfOuro/kurrentdb-php-core/zipball/ac5d0f9180a99444eb1a91391446e774f74cb36f",
+                "reference": "ac5d0f9180a99444eb1a91391446e774f74cb36f",
+                "shasum": ""
+            },
+            "require": {
+                "friendsofouro/http-batch-contract": "^1.0",
+                "friendsofouro/http-batch-implementation": "^1.0",
+                "php": "^8.4",
+                "psr/http-client-implementation": "*",
+                "psr/http-factory-implementation": "*",
+                "psr/http-message-implementation": "*",
                 "ramsey/uuid": "^4.9"
             },
             "replace": {
@@ -94,20 +183,16 @@
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.48",
+                "friendsofouro/http-batch-guzzle": "^1.0",
                 "friendsofphp/php-cs-fixer": "^3.87",
                 "guzzlehttp/guzzle": "^7.10",
-                "kevinrob/guzzle-cache-middleware": "^6.0",
                 "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "^12.3",
-                "rector/rector": "^2.1",
-                "symfony/cache": "^7.3"
+                "rector/rector": "^2.1"
             },
             "suggest": {
-                "friendsofouro/broadway-eventstore": "Integrate Event Store with Broadway",
-                "friendsofouro/geteventstore-bundle": "Integrate Event Store with Symfony 2",
-                "guzzlehttp/guzzle": "Default PSR-7 implementation",
-                "kevinrob/guzzle-cache-middleware": "Cache HTTP requests",
-                "symfony/cache": "Use Symfony to cache HTTP requests"
+                "friendsofouro/http-batch-guzzle": "Default PSR-7 + Batch implementation",
+                "friendsofouro/kurrentdb-bundle": "Integrate KurrentDB with Symfony 7.3 or later"
             },
             "type": "library",
             "extra": {
@@ -120,7 +205,7 @@
                     "src/missing.php"
                 ],
                 "psr-4": {
-                    "EventStore\\": "src/"
+                    "KurrentDB\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -150,9 +235,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfOuro/kurrentdb-php-core/issues",
-                "source": "https://github.com/FriendsOfOuro/kurrentdb-php-core/tree/v0.13.0"
+                "source": "https://github.com/FriendsOfOuro/kurrentdb-php-core/tree/v0.16.0"
             },
-            "time": "2025-09-08T17:13:36+00:00"
+            "time": "2025-09-24T23:24:04+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -481,16 +566,16 @@
         },
         {
             "name": "kevinrob/guzzle-cache-middleware",
-            "version": "6.0.0",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kevinrob/guzzle-cache-middleware.git",
-                "reference": "61305ed694e763e887a04f61e71e2292bb4fbad1"
+                "reference": "3d63aaf136c5a52ce751a63c2169b3a49b26841f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kevinrob/guzzle-cache-middleware/zipball/61305ed694e763e887a04f61e71e2292bb4fbad1",
-                "reference": "61305ed694e763e887a04f61e71e2292bb4fbad1",
+                "url": "https://api.github.com/repos/Kevinrob/guzzle-cache-middleware/zipball/3d63aaf136c5a52ce751a63c2169b3a49b26841f",
+                "reference": "3d63aaf136c5a52ce751a63c2169b3a49b26841f",
                 "shasum": ""
             },
             "require": {
@@ -502,16 +587,14 @@
             "require-dev": {
                 "cache/array-adapter": "^0.4 || ^0.5 || ^1.0",
                 "cache/simple-cache-bridge": "^0.1 || ^1.0",
-                "doctrine/cache": "^1.10",
                 "illuminate/cache": "^5.0",
-                "league/flysystem": "^2.5",
+                "league/flysystem": "^3.16",
                 "phpunit/phpunit": "^9.6.21",
                 "psr/cache": "^1.0",
                 "symfony/cache": "^4.4 || ^5.0",
                 "symfony/phpunit-bridge": "^7.1.4"
             },
             "suggest": {
-                "doctrine/cache": "This library has a lot of ready-to-use cache storage (to be used with Kevinrob\\GuzzleCache\\Storage\\DoctrineCacheStorage). Use only versions >=1.4.0 < 2.0.0",
                 "guzzlehttp/guzzle": "For using this library. It was created for Guzzle6 (but you can use it with any PSR-7 HTTP client).",
                 "laravel/framework": "To be used with Kevinrob\\GuzzleCache\\Storage\\LaravelCacheStorage",
                 "league/flysystem": "To be used with Kevinrob\\GuzzleCache\\Storage\\FlysystemStorage",
@@ -543,7 +626,6 @@
                 "Guzzle",
                 "cache",
                 "cache-control",
-                "doctrine",
                 "expiration",
                 "guzzle6",
                 "handler",
@@ -560,191 +642,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Kevinrob/guzzle-cache-middleware/issues",
-                "source": "https://github.com/Kevinrob/guzzle-cache-middleware/tree/6.0.0"
+                "source": "https://github.com/Kevinrob/guzzle-cache-middleware/tree/7.0.0"
             },
-            "time": "2024-10-17T09:11:54+00:00"
-        },
-        {
-            "name": "marc-mabe/php-enum",
-            "version": "v4.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/marc-mabe/php-enum.git",
-                "reference": "7159809e5cfa041dca28e61f7f7ae58063aae8ed"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/marc-mabe/php-enum/zipball/7159809e5cfa041dca28e61f7f7ae58063aae8ed",
-                "reference": "7159809e5cfa041dca28e61f7f7ae58063aae8ed",
-                "shasum": ""
-            },
-            "require": {
-                "ext-reflection": "*",
-                "php": "^7.1 | ^8.0"
-            },
-            "require-dev": {
-                "phpbench/phpbench": "^0.16.10 || ^1.0.4",
-                "phpstan/phpstan": "^1.3.1",
-                "phpunit/phpunit": "^7.5.20 | ^8.5.22 | ^9.5.11",
-                "vimeo/psalm": "^4.17.0 | ^5.26.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.2-dev",
-                    "dev-master": "4.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MabeEnum\\": "src/"
-                },
-                "classmap": [
-                    "stubs/Stringable.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Marc Bennewitz",
-                    "email": "dev@mabe.berlin",
-                    "homepage": "https://mabe.berlin/",
-                    "role": "Lead"
-                }
-            ],
-            "description": "Simple and fast implementation of enumerations with native PHP",
-            "homepage": "https://github.com/marc-mabe/php-enum",
-            "keywords": [
-                "enum",
-                "enum-map",
-                "enum-set",
-                "enumeration",
-                "enumerator",
-                "enummap",
-                "enumset",
-                "map",
-                "set",
-                "type",
-                "type-hint",
-                "typehint"
-            ],
-            "support": {
-                "issues": "https://github.com/marc-mabe/php-enum/issues",
-                "source": "https://github.com/marc-mabe/php-enum/tree/v4.7.1"
-            },
-            "time": "2024-11-28T04:54:44+00:00"
-        },
-        {
-            "name": "php-http/httplug",
-            "version": "2.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-http/httplug.git",
-                "reference": "5cad731844891a4c282f3f3e1b582c46839d22f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-http/httplug/zipball/5cad731844891a4c282f3f3e1b582c46839d22f4",
-                "reference": "5cad731844891a4c282f3f3e1b582c46839d22f4",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0",
-                "php-http/promise": "^1.1",
-                "psr/http-client": "^1.0",
-                "psr/http-message": "^1.0 || ^2.0"
-            },
-            "require-dev": {
-                "friends-of-phpspec/phpspec-code-coverage": "^4.1 || ^5.0 || ^6.0",
-                "phpspec/phpspec": "^5.1 || ^6.0 || ^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Http\\Client\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric GELOEN",
-                    "email": "geloen.eric@gmail.com"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com",
-                    "homepage": "https://sagikazarmark.hu"
-                }
-            ],
-            "description": "HTTPlug, the HTTP client abstraction for PHP",
-            "homepage": "http://httplug.io",
-            "keywords": [
-                "client",
-                "http"
-            ],
-            "support": {
-                "issues": "https://github.com/php-http/httplug/issues",
-                "source": "https://github.com/php-http/httplug/tree/2.4.1"
-            },
-            "time": "2024-09-23T11:39:58+00:00"
-        },
-        {
-            "name": "php-http/promise",
-            "version": "1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-http/promise.git",
-                "reference": "fc85b1fba37c169a69a07ef0d5a8075770cc1f83"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-http/promise/zipball/fc85b1fba37c169a69a07ef0d5a8075770cc1f83",
-                "reference": "fc85b1fba37c169a69a07ef0d5a8075770cc1f83",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "friends-of-phpspec/phpspec-code-coverage": "^4.3.2 || ^6.3",
-                "phpspec/phpspec": "^5.1.2 || ^6.2 || ^7.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Http\\Promise\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Joel Wurtz",
-                    "email": "joel.wurtz@gmail.com"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com"
-                }
-            ],
-            "description": "Promise used for asynchronous HTTP requests",
-            "homepage": "http://httplug.io",
-            "keywords": [
-                "promise"
-            ],
-            "support": {
-                "issues": "https://github.com/php-http/promise/issues",
-                "source": "https://github.com/php-http/promise/tree/1.3.1"
-            },
-            "time": "2024-03-15T13:55:21+00:00"
+            "time": "2025-09-04T18:27:50+00:00"
         },
         {
             "name": "psr/cache",
@@ -2133,16 +2033,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "6.5.1",
+            "version": "6.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jsonrainbow/json-schema.git",
-                "reference": "b5ab21e431594897e5bb86343c01f140ba862c26"
+                "reference": "ac0d369c09653cf7af561f6d91a705bc617a87b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/b5ab21e431594897e5bb86343c01f140ba862c26",
-                "reference": "b5ab21e431594897e5bb86343c01f140ba862c26",
+                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/ac0d369c09653cf7af561f6d91a705bc617a87b8",
+                "reference": "ac0d369c09653cf7af561f6d91a705bc617a87b8",
                 "shasum": ""
             },
             "require": {
@@ -2202,9 +2102,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jsonrainbow/json-schema/issues",
-                "source": "https://github.com/jsonrainbow/json-schema/tree/6.5.1"
+                "source": "https://github.com/jsonrainbow/json-schema/tree/6.5.2"
             },
-            "time": "2025-08-29T10:58:11+00:00"
+            "time": "2025-09-09T09:42:27+00:00"
         },
         {
             "name": "localheinz/diff",
@@ -2260,6 +2160,79 @@
                 "source": "https://github.com/localheinz/diff/tree/1.3.0"
             },
             "time": "2025-08-30T09:44:18+00:00"
+        },
+        {
+            "name": "marc-mabe/php-enum",
+            "version": "v4.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marc-mabe/php-enum.git",
+                "reference": "bb426fcdd65c60fb3638ef741e8782508fda7eef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marc-mabe/php-enum/zipball/bb426fcdd65c60fb3638ef741e8782508fda7eef",
+                "reference": "bb426fcdd65c60fb3638ef741e8782508fda7eef",
+                "shasum": ""
+            },
+            "require": {
+                "ext-reflection": "*",
+                "php": "^7.1 | ^8.0"
+            },
+            "require-dev": {
+                "phpbench/phpbench": "^0.16.10 || ^1.0.4",
+                "phpstan/phpstan": "^1.3.1",
+                "phpunit/phpunit": "^7.5.20 | ^8.5.22 | ^9.5.11",
+                "vimeo/psalm": "^4.17.0 | ^5.26.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.2-dev",
+                    "dev-master": "4.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MabeEnum\\": "src/"
+                },
+                "classmap": [
+                    "stubs/Stringable.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Bennewitz",
+                    "email": "dev@mabe.berlin",
+                    "homepage": "https://mabe.berlin/",
+                    "role": "Lead"
+                }
+            ],
+            "description": "Simple and fast implementation of enumerations with native PHP",
+            "homepage": "https://github.com/marc-mabe/php-enum",
+            "keywords": [
+                "enum",
+                "enum-map",
+                "enum-set",
+                "enumeration",
+                "enumerator",
+                "enummap",
+                "enumset",
+                "map",
+                "set",
+                "type",
+                "type-hint",
+                "typehint"
+            ],
+            "support": {
+                "issues": "https://github.com/marc-mabe/php-enum/issues",
+                "source": "https://github.com/marc-mabe/php-enum/tree/v4.7.2"
+            },
+            "time": "2025-09-14T11:18:39+00:00"
         }
     ],
     "aliases": [],
@@ -2268,7 +2241,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.3"
+        "php": "^8.4"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"

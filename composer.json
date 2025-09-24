@@ -25,11 +25,9 @@
         }
     ],
     "require": {
-        "php": "^8.3",
-        "friendsofouro/kurrentdb-core": ">=0.13.0",
-        "guzzlehttp/guzzle": "^7.10",
-        "kevinrob/guzzle-cache-middleware": "^6.0",
-        "symfony/cache": "^7.3"
+        "php": "^8.4",
+        "friendsofouro/kurrentdb-core": ">=0.16.0",
+        "friendsofouro/http-batch-guzzle": "^1.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.48"
