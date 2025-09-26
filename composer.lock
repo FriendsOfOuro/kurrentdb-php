@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f51e8a1dff7b35f71bd27c31470ef4d3",
+    "content-hash": "63592240a7e3783e9a8ffd9e95992511",
     "packages": [
         {
             "name": "brick/math",
@@ -68,16 +68,16 @@
         },
         {
             "name": "friendsofouro/http-batch-contract",
-            "version": "v1.0.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfOuro/http-batch-contract.git",
-                "reference": "831832c21165fa88244c19485bff037cb971e8ca"
+                "reference": "336b477e6673e4b16f2ac5a9a5f823f2030000eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-contract/zipball/831832c21165fa88244c19485bff037cb971e8ca",
-                "reference": "831832c21165fa88244c19485bff037cb971e8ca",
+                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-contract/zipball/336b477e6673e4b16f2ac5a9a5f823f2030000eb",
+                "reference": "336b477e6673e4b16f2ac5a9a5f823f2030000eb",
                 "shasum": ""
             },
             "require": {
@@ -101,33 +101,33 @@
             "description": "Contract for a batch of HTTP Requests",
             "support": {
                 "issues": "https://github.com/FriendsOfOuro/http-batch-contract/issues",
-                "source": "https://github.com/FriendsOfOuro/http-batch-contract/tree/v1.0.0"
+                "source": "https://github.com/FriendsOfOuro/http-batch-contract/tree/v2.0.0"
             },
-            "time": "2025-09-24T22:16:17+00:00"
+            "time": "2025-09-26T14:06:17+00:00"
         },
         {
             "name": "friendsofouro/http-batch-guzzle",
-            "version": "v1.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfOuro/http-batch-guzzle.git",
-                "reference": "6a9e1cfffdc976494556fb30d8e2c0ff8b185c7a"
+                "reference": "24d669f0dc618f51dddae9173ebf8b9743766fb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-guzzle/zipball/6a9e1cfffdc976494556fb30d8e2c0ff8b185c7a",
-                "reference": "6a9e1cfffdc976494556fb30d8e2c0ff8b185c7a",
+                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-guzzle/zipball/24d669f0dc618f51dddae9173ebf8b9743766fb5",
+                "reference": "24d669f0dc618f51dddae9173ebf8b9743766fb5",
                 "shasum": ""
             },
             "require": {
-                "friendsofouro/http-batch-contract": "^1.0",
+                "friendsofouro/http-batch-contract": "^2.0",
                 "guzzlehttp/guzzle": "^7.10",
                 "kevinrob/guzzle-cache-middleware": "^7.0",
                 "php": "^8.4",
                 "symfony/cache": "^7.3"
             },
             "provide": {
-                "friendsofouro/http-batch-implementation": "^1.0"
+                "friendsofouro/http-batch-implementation": "^2.0"
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.48",
@@ -149,27 +149,27 @@
             "description": "Guzzle implementation for a batch of HTTP Requests",
             "support": {
                 "issues": "https://github.com/FriendsOfOuro/http-batch-guzzle/issues",
-                "source": "https://github.com/FriendsOfOuro/http-batch-guzzle/tree/v1.0.0"
+                "source": "https://github.com/FriendsOfOuro/http-batch-guzzle/tree/v2.0.1"
             },
-            "time": "2025-09-24T23:10:47+00:00"
+            "time": "2025-09-26T14:17:05+00:00"
         },
         {
             "name": "friendsofouro/kurrentdb-core",
-            "version": "v0.16.0",
+            "version": "v0.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfOuro/kurrentdb-php-core.git",
-                "reference": "ac5d0f9180a99444eb1a91391446e774f74cb36f"
+                "reference": "585f472689d443d12c38cbc8422dae503b2cc7d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfOuro/kurrentdb-php-core/zipball/ac5d0f9180a99444eb1a91391446e774f74cb36f",
-                "reference": "ac5d0f9180a99444eb1a91391446e774f74cb36f",
+                "url": "https://api.github.com/repos/FriendsOfOuro/kurrentdb-php-core/zipball/585f472689d443d12c38cbc8422dae503b2cc7d7",
+                "reference": "585f472689d443d12c38cbc8422dae503b2cc7d7",
                 "shasum": ""
             },
             "require": {
-                "friendsofouro/http-batch-contract": "^1.0",
-                "friendsofouro/http-batch-implementation": "^1.0",
+                "friendsofouro/http-batch-contract": "^2.0",
+                "friendsofouro/http-batch-implementation": "^2.0",
                 "php": "^8.4",
                 "psr/http-client-implementation": "*",
                 "psr/http-factory-implementation": "*",
@@ -183,12 +183,13 @@
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.48",
-                "friendsofouro/http-batch-guzzle": "^1.0",
+                "friendsofouro/http-batch-guzzle": "^2.0",
                 "friendsofphp/php-cs-fixer": "^3.87",
                 "guzzlehttp/guzzle": "^7.10",
                 "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "^12.3",
-                "rector/rector": "^2.1"
+                "rector/rector": "^2.1",
+                "symfony/var-dumper": "^7.3"
             },
             "suggest": {
                 "friendsofouro/http-batch-guzzle": "Default PSR-7 + Batch implementation",
@@ -201,9 +202,6 @@
                 }
             },
             "autoload": {
-                "files": [
-                    "src/missing.php"
-                ],
                 "psr-4": {
                     "KurrentDB\\": "src/"
                 }
@@ -235,9 +233,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfOuro/kurrentdb-php-core/issues",
-                "source": "https://github.com/FriendsOfOuro/kurrentdb-php-core/tree/v0.16.0"
+                "source": "https://github.com/FriendsOfOuro/kurrentdb-php-core/tree/v0.18.0"
             },
-            "time": "2025-09-24T23:24:04+00:00"
+            "time": "2025-09-26T14:20:59+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

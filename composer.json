@@ -26,8 +26,8 @@
     ],
     "require": {
         "php": "^8.4",
-        "friendsofouro/kurrentdb-core": ">=0.16.0",
-        "friendsofouro/http-batch-guzzle": "^1.0"
+        "friendsofouro/kurrentdb-core": "^0.18.0",
+        "friendsofouro/http-batch-guzzle": "^3.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.48"
