@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3c3781b69feafa80382ff529eb13250",
+    "content-hash": "6c55cffd8329356e2c0d29a0d8ad24cc",
     "packages": [
         {
             "name": "brick/math",
@@ -68,16 +68,16 @@
         },
         {
             "name": "friendsofouro/http-batch-contract",
-            "version": "v2.0.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfOuro/http-batch-contract.git",
-                "reference": "336b477e6673e4b16f2ac5a9a5f823f2030000eb"
+                "reference": "dc320ae3f26c72c6e4bc9754cf5d88c6008a0b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-contract/zipball/336b477e6673e4b16f2ac5a9a5f823f2030000eb",
-                "reference": "336b477e6673e4b16f2ac5a9a5f823f2030000eb",
+                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-contract/zipball/dc320ae3f26c72c6e4bc9754cf5d88c6008a0b5d",
+                "reference": "dc320ae3f26c72c6e4bc9754cf5d88c6008a0b5d",
                 "shasum": ""
             },
             "require": {
@@ -101,33 +101,33 @@
             "description": "Contract for a batch of HTTP Requests",
             "support": {
                 "issues": "https://github.com/FriendsOfOuro/http-batch-contract/issues",
-                "source": "https://github.com/FriendsOfOuro/http-batch-contract/tree/v2.0.0"
+                "source": "https://github.com/FriendsOfOuro/http-batch-contract/tree/v3.0.0"
             },
-            "time": "2025-09-26T14:06:17+00:00"
+            "time": "2025-09-26T14:32:54+00:00"
         },
         {
             "name": "friendsofouro/http-batch-guzzle",
-            "version": "v2.0.1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfOuro/http-batch-guzzle.git",
-                "reference": "24d669f0dc618f51dddae9173ebf8b9743766fb5"
+                "reference": "3816df643326fe0efdcdae78fc358688fd5f7602"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-guzzle/zipball/24d669f0dc618f51dddae9173ebf8b9743766fb5",
-                "reference": "24d669f0dc618f51dddae9173ebf8b9743766fb5",
+                "url": "https://api.github.com/repos/FriendsOfOuro/http-batch-guzzle/zipball/3816df643326fe0efdcdae78fc358688fd5f7602",
+                "reference": "3816df643326fe0efdcdae78fc358688fd5f7602",
                 "shasum": ""
             },
             "require": {
-                "friendsofouro/http-batch-contract": "^2.0",
+                "friendsofouro/http-batch-contract": "^3.0",
                 "guzzlehttp/guzzle": "^7.10",
                 "kevinrob/guzzle-cache-middleware": "^7.0",
                 "php": "^8.4",
                 "symfony/cache": "^7.3"
             },
             "provide": {
-                "friendsofouro/http-batch-implementation": "^2.0"
+                "friendsofouro/http-batch-implementation": "^3.0"
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.48",
@@ -149,27 +149,27 @@
             "description": "Guzzle implementation for a batch of HTTP Requests",
             "support": {
                 "issues": "https://github.com/FriendsOfOuro/http-batch-guzzle/issues",
-                "source": "https://github.com/FriendsOfOuro/http-batch-guzzle/tree/v2.0.1"
+                "source": "https://github.com/FriendsOfOuro/http-batch-guzzle/tree/v3.0.0"
             },
-            "time": "2025-09-26T14:17:05+00:00"
+            "time": "2025-09-26T15:00:05+00:00"
         },
         {
             "name": "friendsofouro/kurrentdb-core",
-            "version": "v0.18.0",
+            "version": "v0.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfOuro/kurrentdb-php-core.git",
-                "reference": "585f472689d443d12c38cbc8422dae503b2cc7d7"
+                "reference": "ac1c63a8f2c9af990f9370b852ee38c17d0cd5c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfOuro/kurrentdb-php-core/zipball/585f472689d443d12c38cbc8422dae503b2cc7d7",
-                "reference": "585f472689d443d12c38cbc8422dae503b2cc7d7",
+                "url": "https://api.github.com/repos/FriendsOfOuro/kurrentdb-php-core/zipball/ac1c63a8f2c9af990f9370b852ee38c17d0cd5c1",
+                "reference": "ac1c63a8f2c9af990f9370b852ee38c17d0cd5c1",
                 "shasum": ""
             },
             "require": {
-                "friendsofouro/http-batch-contract": "^2.0",
-                "friendsofouro/http-batch-implementation": "^2.0",
+                "friendsofouro/http-batch-contract": "^3.0",
+                "friendsofouro/http-batch-implementation": "^3.0",
                 "php": "^8.4",
                 "psr/http-client-implementation": "*",
                 "psr/http-factory-implementation": "*",
@@ -183,7 +183,7 @@
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.48",
-                "friendsofouro/http-batch-guzzle": "^2.0",
+                "friendsofouro/http-batch-guzzle": "^3.0",
                 "friendsofphp/php-cs-fixer": "^3.87",
                 "guzzlehttp/guzzle": "^7.10",
                 "phpstan/phpstan": "^2.1",
@@ -233,9 +233,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfOuro/kurrentdb-php-core/issues",
-                "source": "https://github.com/FriendsOfOuro/kurrentdb-php-core/tree/v0.18.0"
+                "source": "https://github.com/FriendsOfOuro/kurrentdb-php-core/tree/v0.19.0"
             },
-            "time": "2025-09-26T14:20:59+00:00"
+            "time": "2025-09-26T15:23:46+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
