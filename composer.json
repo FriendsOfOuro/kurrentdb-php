@@ -30,7 +30,7 @@
         "friendsofouro/kurrentdb-core": "^0.19.0"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "^2.48"
+        "ergebnis/composer-normalize": "^2.56"
     },
     "replace": {
         "friendsofouro/geteventstore": "self.version"
